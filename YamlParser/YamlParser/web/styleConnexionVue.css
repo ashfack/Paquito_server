@@ -1,0 +1,35 @@
+.mdpOublieBtn
+{
+    display: inline-block;
+}
+#buttonConnexion
+{
+	position:relative;
+	left:65px;
+}
+#lienMdpOublie
+{
+	position:relative;
+	left:45px;
+}
+h1
+{
+    position: relative;
+    left: 40%;
+}
+#formulaireInscription
+{
+    position: relative;
+    left: 21%;
+}
+#formulaireConnexion
+{
+    position: relative;
+    left: 20%;
+}
+
+#buttonInscription
+{
+    position: relative;
+    left: 198%;
+}

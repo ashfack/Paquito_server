@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\YamlAuthor" table="yaml_author">
+    <indexes>
+      <index name="id_author_idx" columns="id_author"/>
+    </indexes>
+    <id name="idYaml" type="integer" column="id_yaml"/>
+    <id name="idAuthor" type="integer" column="id_author"/>
+  </entity>
+</doctrine-mapping>

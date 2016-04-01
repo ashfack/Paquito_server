@@ -1,0 +1,55 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Inscription{% endblock %}
+ {% block stylesheets %}
+            <link rel="stylesheet" type="text/css" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset('styleConnexionVue.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+ {% endblock %}
+{% block body %}
+<div class="hero-unit">
+	  <h1>Paquito</h1>
+	</div>
+    {{ form_row(form._token) }}
+	<div  class="label label-default" id="formulaireInscription" >
+			<form class="form-horizontal" method="post">
+				<div class="control-group">
+				    <div class="control-group">
+				    <label class="control-label" for="mailI">Mail :</label>
+				    <div class="controls">
+				     {{ form_widget(form.mail) }}
+				    </div>
+					<div>
+				      {{ message }}
+				    </div>
+				</div>
+				<div class="control-group">
+				    <label class="control-label" for="mdpI">Mot de passe :</label>
+				    <div class="controls">
+				      {{ form_widget(form.passworda) }}
+				    </div>
+				</div>
+				<div class="control-group">
+				    <label class="control-label" for="mdpI">Name :</label>
+				    <div class="controls">
+				      {{ form_widget(form.name) }}
+				    </div>
+				</div>
+				<div class="control-group">
+				    <label class="control-label" for="mdpI">Surname :</label>
+				    <div class="controls">
+				      {{ form_widget(form.surname) }}
+				    </div>
+				</div>
+				<div class="control-group">
+				    <label class="control-label" for="mdpI">Home page :</label>
+				    <div class="controls">
+				      {{ form_widget(form.homepage) }}
+				    </div>
+				</div>
+				<div class="btn-group">
+					<button type ="submit" id="buttonInscription" class ="btn"/>Inscription</button>
+				</div>
+			</form>
+	</div>
+{% endblock %}

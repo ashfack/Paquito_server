@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block title %}Project details {% endblock %}
+{% block body %}
+    <h1>Projet</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Nom</th>
+                <td>{% if yaml.name %}{{ yaml.name }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Auteur</th>
+				<td>
+				{% for user in auteurs %}
+        {{ user.name  }}: {{ user.mail }}</br>
+          {% endfor %}
+                  </td>
+            </tr>
+            <tr>
+                <th>Version</th>
+                <td>{% if yaml.version %}{{ yaml.version }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ yaml.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

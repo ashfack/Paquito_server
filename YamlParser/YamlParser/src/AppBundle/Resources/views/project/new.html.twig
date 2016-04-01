@@ -1,0 +1,12 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}New Project{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_row(form._token) }}
+	    <input type="submit" value="Valider les informations" />
+		 <input type="button" value="Importer fichier YAML" />
+    {{ form_end(form) }}
+{% endblock %}
